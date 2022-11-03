@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="conformance-5384"/>
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Requirement Descriptors for the ISO TS 5384</p>
+    </div>
+  </text>
+	<url value="http://iso.org/fhir/ts-5384/ValueSet/conformance-5384"/>
+	<version value="2017-05-03T00:00:00"/>
+	<name value="VsConformance"/>
+	<title value="ISO TS 5384 Conformance Rules"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<description value="Requirement Descriptors for the ISO TS 5384"/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<system value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"/>
+		</include>
+	</compose>
+</ValueSet>

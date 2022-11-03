@@ -1,0 +1,13 @@
+{
+ "package-id" : "iso.fhir.5384",
+ "title" : "ISO TS 5384 Immunization FHIR Logical Models", 
+ "canonical" : "http://iso.org/fhir/ts-5384", 
+ "introduction" : "WHO Vaccination Certificate FHIR Implementation Guide",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://iso.org/fhir/ts-5384",
+  "status" : "ci-build",
+  "current" : true
+ }]
+}
