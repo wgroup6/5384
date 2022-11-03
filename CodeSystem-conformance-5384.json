@@ -1,0 +1,72 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "conformance-5384",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Requirement Descriptors for the ISO TS 5384</div>"
+  },
+  "url": "http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384",
+  "version": "0.0.1",
+  "name": "CsConformance",
+  "title": "ISO TS 5384 Conformance Rules",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-11-03T09:58:38+00:00",
+  "publisher": "ISO",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.iso.int"
+        }
+      ]
+    }
+  ],
+  "description": "Requirement Descriptors for the ISO TS 5384.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://iso.org/fhir/ts-5384/ValueSet/conformance-5384",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "M",
+      "display": "Mandatory (exceptions not allowed)",
+      "definition": "A mandatory element shall always be present and - where applicable (by use case) - shall be valorised with valid values. No exceptions or empty/null values are allowed in this case.\\n Recipient shall understand mandatory elements."
+    },
+    {
+      "code": "R",
+      "display": "Required (exceptions allowed)",
+      "definition": "A required element shall always be present and - where applicable (by use case)- should be valorised with valid values. Exceptions or empty/null values are allowed in this case.\\n Recipient shall understand required elements."
+    },
+    {
+      "code": "RK",
+      "display": "Required, if known",
+      "definition": "A “Required if known” element is one that should be provided (dependent on the use case).  If there is information available, the element must be present and - where applicable - valorised with valid values.  If there is no information available, the element may be omitted, may be left empty, or may be valorised with exceptional or null values depending on the implementation.  Recipient shall understand required elements."
+    },
+    {
+      "code": "C",
+      "display": "Conditional (has associated condition predicates)",
+      "definition": "Depending on predicate conditions the element may assume different conformance strengths (e.g. O, R, RK) or not being present.  A predicate can be simple (for example: «element A exists»; «attribute b = value1») or complex (for example: «element C exists» AND «the attribute x of element D = value2).  A conditional element may be evaluated on a single condition (if predicate A then ‘Required’ else ‘Optional’) or on multiple conditions (e.g. if predicate A then ‘Required’; if predicate B then ‘Optional’; else ‘Not Present’).  The resulting conformance strength (M, R, RK, O, ...) is determined by the conditions.  Recipient shall understand conditional elements, when required. For example, a conditional element that could be optional or not present could be ignored by a recipient. Depending on the conditions, exception is or is not raised if the data are missing."
+    },
+    {
+      "code": "O",
+      "display": "Optional",
+      "definition": "This data element, dependent on the use case can be omitted.  The reason for specifying the optional data elements is to ensure that both sender and recipient use the appropriate semantic interpretation of these elements.  No exception is raised if the data are missing."
+    },
+    {
+      "code": "NR",
+      "display": "Not Required",
+      "definition": "This data element should be omitted where indicated by use case."
+    }
+  ]
+}

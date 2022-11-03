@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "conformance-5384",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Requirement Descriptors for the ISO TS 5384</p>\n    </div>"
+  },
+  "url": "http://iso.org/fhir/ts-5384/ValueSet/conformance-5384",
+  "version": "0.0.1",
+  "name": "VsConformance",
+  "title": "ISO TS 5384 Conformance Rules",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-11-03T09:58:38+00:00",
+  "publisher": "ISO",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.iso.int"
+        }
+      ]
+    }
+  ],
+  "description": "Requirement Descriptors for the ISO TS 5384",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"
+      }
+    ]
+  }
+}

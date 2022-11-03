@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ISO.FHIR.5384\ISO TS 5384 Use Cases - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/left.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/right.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ISO TS 5384 Immunization FHIR Logical Models</span><br/>0.0.1 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+   <li class="dropdown">
+		<a data-toggle="dropdown"
+ 			href="#"
+ 			class="dropdown-toggle">Use Cases and Models<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+		<li>
+				<a href="useCases.html">Use Cases</a>
+			</li>
+			<li>
+				<a href="models.html">Logical Models</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown"
+ 			href="#"
+ 			class="dropdown-toggle">Specifications<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="conformance.html">Conformance</a>
+			</li>
+			<li>
+				<a href="terminologies.html">Terminologies</a>
+			</li>
+		</ul>
+	</li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>ISO TS 5384 Use Cases</b></li>
+          
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ISO TS 5384 Immunization FHIR Logical Models - Local Development build (v0.0.1). See the <a href="http://iso.org/fhir/ts-5384/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>ISO TS 5384 Use Cases</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#populate-an-immunization-registry" id="markdown-toc-populate-an-immunization-registry">Populate an Immunization Registry</a></li>
+  <li><a href="#record-a-current-immunization-event" id="markdown-toc-record-a-current-immunization-event">Record a Current immunization event.</a></li>
+  <li><a href="#record-a-historic-immunization-event" id="markdown-toc-record-a-historic-immunization-event">Record a Historic immunization event.</a></li>
+  <li><a href="#create-subject-immunization-history" id="markdown-toc-create-subject-immunization-history">Create Subject Immunization history</a></li>
+  <li><a href="#create-subject-immunization-reminder" id="markdown-toc-create-subject-immunization-reminder">Create Subject immunization reminder</a></li>
+  <li><a href="#create-anonymized-immunization-reports" id="markdown-toc-create-anonymized-immunization-reports">Create anonymized immunization reports.</a></li>
+</ul>
+
+</div>
+<h3 id="populate-an-immunization-registry">Populate an Immunization Registry</h3>
+
+<h4 id="description">Description</h4>
+
+<p>The data required within an Immunization Registry to enable the control
+and elimination of vaccine preventable diseases by ensuring the
+provision of information and knowledge necessary to stakeholders using
+the registry to achieve the best possible immunization coverage for
+subjects.</p>
+
+<h4 id="reference-models">Reference Models</h4>
+
+<table style="width:80%">
+<tbody>
+<tr class="odd">
+<td style="background-color:powderblue;vertical-align: middle;width:30%"><p><a href="StructureDefinition-Immunization-uc1.html"><strong>Immunization</strong></a></p>
+<p><strong>(for registry population)</strong></p></td>
+<td></td>
+<td><p>This model uses the following specialized models:</p>
+<ul>
+<li><p><a href="StructureDefinition-Subject-uc1.html">Subject of Care</a> (for registry population)</p></li>
+<li><p><a href="StructureDefinition-Immunization-uc1.html">Immunization Forecast</a> (for registry population)</p></li>
+<li><p><a href="StructureDefinition-Product-uc1.html">Product</a> (for registry population)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="record-a-current-immunization-event">Record a Current immunization event.</h3>
+
+<h4 id="description-1">Description</h4>
+
+<p>The data required by an immunizer or authorized person who has just
+immunized a subject to record and/or share the immunization event. The
+authorized person has complete information about the product (has vial
+in hand) and its administration to the subject who received the product.
+This immunization record may be shared with an Immunization Registry or
+other system.</p>
+
+<h4 id="reference-model">Reference Model</h4>
+
+<table style="width:80%">
+<tbody>
+<tr class="odd">
+<td style="background-color:powderblue;vertical-align: middle;width:30%"><p><a href="StructureDefinition-Immunization-uc2.html"><strong>Immunization</strong></a></p>
+<p><strong>(for event recording)</strong></p></td>
+<td></td>
+<td><p>This model uses the following specialized models:</p>
+<ul>
+<li><p>Subject of Care (for event recording)</p></li>
+<li><p>Immunization Forecast (for event recording)</p></li>
+<li><p><a href="StructureDefinition-Product-uc2.html">Product (for event recording)</a></p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="record-a-historic-immunization-event">Record a Historic immunization event.</h3>
+
+<h4 id="description-2">Description</h4>
+
+<p>The data required by an authorized person who is required to record
+and/or share an immunization event that occurred in the past. The
+information may or may not include all information pertaining the
+product or its administration to the subject.</p>
+
+<h4 id="reference-model-1">Reference Model</h4>
+
+<table style="width:80%">
+<tbody>
+<tr class="odd">
+<td style="background-color:powderblue;vertical-align: middle;width:30%"><p><a href="StructureDefinition-Immunization-uc3.html"><strong>Immunization</strong></a></p>
+<p><strong>(for historic event)</strong></p></td>
+<td></td>
+<td><p>This model uses the following specialized models:</p>
+<ul>
+<li><p>Subject of Care (for historic event)</p></li>
+<li><p>Immunization Forecast (for historic event)</p></li>
+<li><p>Product (for historic event)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="create-subject-immunization-history">Create Subject Immunization history</h3>
+
+<h4 id="description-3">Description</h4>
+
+<p>The data required by a clinician or subject with the intent to view
+and/or review a subject’s immunization history. The immunization history
+could pertain to one vaccine preventable disease or cover all
+immunization events over time that pertain to a subject.</p>
+
+<h4 id="reference-model-2">Reference Model</h4>
+
+<table style="width:80%">
+<tbody>
+<tr class="odd">
+<td style="background-color:powderblue;vertical-align: middle;width:30%"><p><a href="StructureDefinition-Immunization-uc4.html"><strong>Immunization</strong></a></p>
+<p><strong>(for immunization history)</strong></p></td>
+<td></td>
+<td><p>This model uses the following specialized models:</p>
+<ul>
+<li><p>Subject of Care (for immunization history)</p></li>
+<li><p>Immunization Forecast (for immunization history)</p></li>
+<li><p>Product (for immunization history)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="create-subject-immunization-reminder">Create Subject immunization reminder</h3>
+
+<h4 id="description-4">Description</h4>
+
+<p>The data required by a clinician or subject that identifies the
+subject’s next scheduled vaccination or dose. This may be generated by
+an Immunization Registry or other system.</p>
+
+<h4 id="reference-model-3">Reference Model</h4>
+
+<table style="width:80%">
+<tbody>
+<tr class="odd">
+<td style="background-color:powderblue;vertical-align: middle;width:30%"><p><a href="StructureDefinition-Immunization-uc5.html"><strong>Immunization</strong></a></p>
+<p><strong>(for immunization reminder)</strong></p></td>
+<td></td>
+<td><p>This model uses the following specialized models:</p>
+<ul>
+<li><p>Subject of Care (for immunization reminder)</p></li>
+<li><p>Immunization Forecast (for immunization reminder)</p></li>
+<li><p>Product (for immunization reminder)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="create-anonymized-immunization-reports">Create anonymized immunization reports.</h3>
+
+<h4 id="description-5">Description</h4>
+
+<p>This data required by an authorised agency/entity to create a report
+that demonstrates an anonymized population level immunization
+status/summary, i.e., a status of COVID-19 immunization at a certain
+location or country.</p>
+
+<h4 id="reference-model-4">Reference Model</h4>
+
+<table style="width:80%">
+<tbody>
+<tr class="odd">
+<td style="background-color:powderblue;vertical-align: middle;width:30%"><p><a href="StructureDefinition-Immunization-uc6.html"><strong>Immunization</strong></a></p>
+<p><strong>(for anonymized reports)</strong></p></td>
+<td></td>
+<td><p>This model uses the following specialized models:</p>
+<ul>
+<li><p>Subject of Care (for anonymized reports)</p></li>
+<li><p>Immunization Forecast (for anonymized reports)</p></li>
+<li><p>Product (for anonymized reports)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.iso.int">ISO</a>.  Package iso.fhir.5384#0.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 3, 2022 09:58+0000">2022-11-03</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://iso.org/fhir/ts-5384/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
