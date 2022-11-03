@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "conformance-5384"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Requirement Descriptors for the ISO TS 5384</div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"];
+  fhir:CodeSystem.version [ fhir:value "0.0.1"];
+  fhir:CodeSystem.name [ fhir:value "CsConformance"];
+  fhir:CodeSystem.title [ fhir:value "ISO TS 5384 Conformance Rules"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2022-11-03T09:58:38+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "ISO"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.iso.int" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Requirement Descriptors for the ISO TS 5384."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://iso.org/fhir/ts-5384/ValueSet/conformance-5384";
+     fhir:link <http://iso.org/fhir/ts-5384/ValueSet/conformance-5384>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "M" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mandatory (exceptions not allowed)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A mandatory element shall always be present and - where applicable (by use case) - shall be valorised with valid values. No exceptions or empty/null values are allowed in this case.\\n Recipient shall understand mandatory elements." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Required (exceptions allowed)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A required element shall always be present and - where applicable (by use case)- should be valorised with valid values. Exceptions or empty/null values are allowed in this case.\\n Recipient shall understand required elements." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "RK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Required, if known" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A “Required if known” element is one that should be provided (dependent on the use case).  If there is information available, the element must be present and - where applicable - valorised with valid values.  If there is no information available, the element may be omitted, may be left empty, or may be valorised with exceptional or null values depending on the implementation.  Recipient shall understand required elements." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "C" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conditional (has associated condition predicates)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Depending on predicate conditions the element may assume different conformance strengths (e.g. O, R, RK) or not being present.  A predicate can be simple (for example: «element A exists»; «attribute b = value1») or complex (for example: «element C exists» AND «the attribute x of element D = value2).  A conditional element may be evaluated on a single condition (if predicate A then ‘Required’ else ‘Optional’) or on multiple conditions (e.g. if predicate A then ‘Required’; if predicate B then ‘Optional’; else ‘Not Present’).  The resulting conformance strength (M, R, RK, O, ...) is determined by the conditions.  Recipient shall understand conditional elements, when required. For example, a conditional element that could be optional or not present could be ignored by a recipient. Depending on the conditions, exception is or is not raised if the data are missing." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "O" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Optional" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "This data element, dependent on the use case can be omitted.  The reason for specifying the optional data elements is to ensure that both sender and recipient use the appropriate semantic interpretation of these elements.  No exception is raised if the data are missing." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "NR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Required" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "This data element should be omitted where indicated by use case." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,9 +1,135 @@
 [
   {
-    "id": "my-ig",
+    "id": "conformance-5384",
+    "type": "CodeSystem",
+    "url": "http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384",
+    "version": "0.0.1",
+    "name": "CsConformance"
+  },
+  {
+    "id": "iso.fhir.5384",
     "type": "ImplementationGuide",
-    "url": "http://example.com/fhir/example",
-    "version": "1.0.0",
-    "name": "ExampleIG"
+    "url": "http://iso.org/fhir/ts-5384/ImplementationGuide/iso.fhir.5384",
+    "version": "0.0.1",
+    "name": "IsoTs5384"
+  },
+  {
+    "id": "Forecast",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Forecast",
+    "version": "0.0.1",
+    "name": "ImmunizationForecast"
+  },
+  {
+    "id": "Forecast-uc1",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Forecast-uc1",
+    "version": "0.0.1",
+    "name": "ImmunizationForecastUc1"
+  },
+  {
+    "id": "HealthProfessional",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/HealthProfessional",
+    "version": "0.0.1",
+    "name": "HealthProfessional"
+  },
+  {
+    "id": "Immunization",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Immunization",
+    "version": "0.0.1",
+    "name": "Immunization"
+  },
+  {
+    "id": "Immunization-uc1",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Immunization-uc1",
+    "version": "0.0.1",
+    "name": "ImmunizationUcRegistry"
+  },
+  {
+    "id": "Immunization-uc2",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Immunization-uc2",
+    "version": "0.0.1",
+    "name": "ImmunizationUcCurrentEvent"
+  },
+  {
+    "id": "Immunization-uc3",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Immunization-uc3",
+    "version": "0.0.1",
+    "name": "ImmunizationUcHistoricEvent"
+  },
+  {
+    "id": "Immunization-uc4",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Immunization-uc4",
+    "version": "0.0.1",
+    "name": "ImmunizationUcHistory"
+  },
+  {
+    "id": "Immunization-uc5",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Immunization-uc5",
+    "version": "0.0.1",
+    "name": "ImmunizationUcReminder"
+  },
+  {
+    "id": "Immunization-uc6",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Immunization-uc6",
+    "version": "0.0.1",
+    "name": "ImmunizationUcAnonymized"
+  },
+  {
+    "id": "Product",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Product",
+    "version": "0.0.1",
+    "name": "Product"
+  },
+  {
+    "id": "Product-uc1",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Product-uc1",
+    "version": "0.0.1",
+    "name": "ProductUcRegistry"
+  },
+  {
+    "id": "Product-uc2",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Product-uc2",
+    "version": "0.0.1",
+    "name": "ProductUcCurrentEvent"
+  },
+  {
+    "id": "SimpleOrganization",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/SimpleOrganization",
+    "version": "0.0.1",
+    "name": "SimpleOrganization"
+  },
+  {
+    "id": "Subject",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Subject",
+    "version": "0.0.1",
+    "name": "SubjectOfCare"
+  },
+  {
+    "id": "Subject-uc1",
+    "type": "StructureDefinition",
+    "url": "http://iso.org/fhir/ts-5384/StructureDefinition/Subject-uc1",
+    "version": "0.0.1",
+    "name": "SubjectOfCareRegistry"
+  },
+  {
+    "id": "conformance-5384",
+    "type": "ValueSet",
+    "url": "http://iso.org/fhir/ts-5384/ValueSet/conformance-5384",
+    "version": "0.0.1",
+    "name": "VsConformance"
   }
 ]

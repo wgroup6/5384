@@ -1,9 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4b32428c-bd84-454a-be5d-0813f8478373"/>
+  <id value="f409f8fa-ba43-4d09-aae7-1b37f7f13f2a"/>
   <meta>
-    <lastUpdated value="2022-11-02T16:59:32.093+00:00"/>
+    <lastUpdated value="2022-11-03T09:58:38.177+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://iso.org/fhir/ts-5384/ValueSet/conformance-5384"/>
+    <resource>
+      <ValueSet>
+        <id value="conformance-5384"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-conformance-5384.html">ISO TS 5384 Conformance Rules v0.0.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---iso.org-fhir-ts-5384-CodeSystem-conformance-5384-M"> </a>  
+                  <a href="CodeSystem-conformance-5384.html#conformance-5384-M">M</a>
+                </td>
+                <td>http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384</td>
+                <td>Mandatory (exceptions not allowed)</td>
+                <td>
+                  <div>
+                    <p>A mandatory element shall always be present and - where applicable (by use case) - shall be valorised with valid values. No exceptions or empty/null values are allowed in this case.\n Recipient shall understand mandatory elements.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---iso.org-fhir-ts-5384-CodeSystem-conformance-5384-R"> </a>  
+                  <a href="CodeSystem-conformance-5384.html#conformance-5384-R">R</a>
+                </td>
+                <td>http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384</td>
+                <td>Required (exceptions allowed)</td>
+                <td>
+                  <div>
+                    <p>A required element shall always be present and - where applicable (by use case)- should be valorised with valid values. Exceptions or empty/null values are allowed in this case.\n Recipient shall understand required elements.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---iso.org-fhir-ts-5384-CodeSystem-conformance-5384-RK"> </a>  
+                  <a href="CodeSystem-conformance-5384.html#conformance-5384-RK">RK</a>
+                </td>
+                <td>http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384</td>
+                <td>Required, if known</td>
+                <td>
+                  <div>
+                    <p>A “Required if known” element is one that should be provided (dependent on the use case).  If there is information available, the element must be present and - where applicable - valorised with valid values.  If there is no information available, the element may be omitted, may be left empty, or may be valorised with exceptional or null values depending on the implementation.  Recipient shall understand required elements.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---iso.org-fhir-ts-5384-CodeSystem-conformance-5384-C"> </a>  
+                  <a href="CodeSystem-conformance-5384.html#conformance-5384-C">C</a>
+                </td>
+                <td>http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384</td>
+                <td>Conditional (has associated condition predicates)</td>
+                <td>
+                  <div>
+                    <p>Depending on predicate conditions the element may assume different conformance strengths (e.g. O, R, RK) or not being present.  A predicate can be simple (for example: «element A exists»; «attribute b = value1») or complex (for example: «element C exists» AND «the attribute x of element D = value2).  A conditional element may be evaluated on a single condition (if predicate A then ‘Required’ else ‘Optional’) or on multiple conditions (e.g. if predicate A then ‘Required’; if predicate B then ‘Optional’; else ‘Not Present’).  The resulting conformance strength (M, R, RK, O, ...) is determined by the conditions.  Recipient shall understand conditional elements, when required. For example, a conditional element that could be optional or not present could be ignored by a recipient. Depending on the conditions, exception is or is not raised if the data are missing.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---iso.org-fhir-ts-5384-CodeSystem-conformance-5384-O"> </a>  
+                  <a href="CodeSystem-conformance-5384.html#conformance-5384-O">O</a>
+                </td>
+                <td>http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384</td>
+                <td>Optional</td>
+                <td>
+                  <div>
+                    <p>This data element, dependent on the use case can be omitted.  The reason for specifying the optional data elements is to ensure that both sender and recipient use the appropriate semantic interpretation of these elements.  No exception is raised if the data are missing.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---iso.org-fhir-ts-5384-CodeSystem-conformance-5384-NR"> </a>  
+                  <a href="CodeSystem-conformance-5384.html#conformance-5384-NR">NR</a>
+                </td>
+                <td>http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384</td>
+                <td>Not Required</td>
+                <td>
+                  <div>
+                    <p>This data element should be omitted where indicated by use case.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://iso.org/fhir/ts-5384/ValueSet/conformance-5384"/>
+        <version value="0.0.1"/>
+        <name value="VsConformance"/>
+        <title value="ISO TS 5384 Conformance Rules"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2022-11-03T09:58:38+00:00"/>
+        <publisher value="ISO"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.iso.int"/>
+          </telecom>
+        </contact>
+        <description value="Requirement Descriptors for the ISO TS 5384"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:c17458ac-456b-4bd2-9176-c88737ef5f32"/>
+          <timestamp value="2022-11-03T09:58:50+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384|0.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"/>
+            <code value="M"/>
+            <display value="Mandatory (exceptions not allowed)"/>
+          </contains>
+          <contains>
+            <system value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"/>
+            <code value="R"/>
+            <display value="Required (exceptions allowed)"/>
+          </contains>
+          <contains>
+            <system value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"/>
+            <code value="RK"/>
+            <display value="Required, if known"/>
+          </contains>
+          <contains>
+            <system value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"/>
+            <code value="C"/>
+            <display value="Conditional (has associated condition predicates)"/>
+          </contains>
+          <contains>
+            <system value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"/>
+            <code value="O"/>
+            <display value="Optional"/>
+          </contains>
+          <contains>
+            <system value="http://iso.org/fhir/ts-5384/CodeSystem/conformance-5384"/>
+            <code value="NR"/>
+            <display value="Not Required"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

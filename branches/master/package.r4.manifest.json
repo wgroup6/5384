@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "date": "20221102165845",
+  "version": "0.0.1",
+  "date": "20221103095802",
   "notForPublication": true,
-  "name": "my-ig.r4"
+  "name": "iso.fhir.5384.r4"
 }
